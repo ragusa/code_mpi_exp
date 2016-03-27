@@ -1,3 +1,9 @@
+
+hello:
+	mpic++ -O3 helloBLACS.cpp -o helloBLACS.out
+	mpirun -np 1 ./helloBLACS.out matrixFile 4 4 2 2
+
+
 run1:
 	mpicc -O3 test_mpi1.c
 	mpirun -np 2 ./a.out
